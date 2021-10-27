@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="style.css">
+	<title>Resto App</title>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Our Top Menu</h1>
+		<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+		<a href="#" class="btn">View More</a>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/plate.png" alt="Plate">
+					<h3>Sample Headline</h3>
+					<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+					<h4 class="price">$ 30</h4>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/plate1.png" alt="Plate">
+					<h3>Sample Headline</h3>
+					<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+					<h4 class="price">$ 23</h4>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/plate.png" alt="Plate">
+					<h3>Sample Headline</h3>
+					<p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+					<h4 class="price">$ 20</h4>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+	  		<div class="swiper-button-next"></div>
+		</div>
+	</div>
+	
+
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+		  // Optional parameters
+		  direction: 'horizontal',
+		  loop: true,
+
+		  // Navigation arrows
+		  navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  },
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--open-sans);
+}
+
+:root {
+	--playfair: 'Playfair Display', serif;
+	--open-sans: 'Open Sans', sans-serif;
+	--bg: #6259ac;
+	--clr: #9a93d7;
+}
+
+body {
+	background: var(--bg);
+}
+
+.container {
+	max-width: 576px;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding: 40px 16px;
+}
+.container > h1 {
+	font-size: 48px;
+	font-family: var(--playfair);
+	color: #fff;
+	margin-bottom: 20px;
+}
+.container > p {
+	color: #fff;
+	margin-bottom: 20px;
+}
+.container .btn {
+	display: inline-block;
+	padding: 10px 30px;
+	border: 2px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 30px;
+}
+.container .btn:hover {
+	opacity: .8;
+}
+.swiper {
+	width: 100%;
+}
+.swiper-slide {
+	text-align: center;
+}
+.swiper-slide h3 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	margin: 20px 0;
+	font-family: var(--playfair);
+}
+.swiper-slide p {
+	color: var(--clr);
+}
+.swiper-slide .price {
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 20px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	color: rgba(255, 255, 255, .3);
+	transition: all .3s ease;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	color: rgba(255, 255, 255, .7);	
+}
